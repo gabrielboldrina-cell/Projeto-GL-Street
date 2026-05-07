@@ -1,12 +1,12 @@
-// ════════════════════════════════════════════════════════
+
 //  GL STREET — produto.js
 //  Banco de dados dos produtos + lógica da página dinâmica
-//
+
 //  Para adicionar um produto novo:
 //  1. Copie um bloco abaixo e cole com um novo ID único
 //  2. Preencha as informações
 //  3. No home.blade.php, use data-produto-id="seu-id-novo"
-// ════════════════════════════════════════════════════════
+
 
 const GL_PRODUTOS = {
 

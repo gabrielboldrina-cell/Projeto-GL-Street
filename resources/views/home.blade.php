@@ -235,9 +235,9 @@
                   Camisa Brasil Jordan I 2026/27 Torcedora Pro Feminina
                 </h5>
                 <p class="card-text">R$ 749,99</p>
-                <button class="btn btn-sm btn-danger" href="produto.blade.php">
+                <a class="btn btn-sm btn-danger" href="{{ route('produto') }}">
                   Ver Produto
-                </button>
+                </a>
               </div>
             </div>
           </div>

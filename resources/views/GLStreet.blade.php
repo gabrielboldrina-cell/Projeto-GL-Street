@@ -55,14 +55,6 @@
 @endsection
 
 @section('content')
-<header class="promo-strip">
-    <div class="container promo-strip-content">
-        <a class="promo-strip-link" href="{{ route('home') }}">Frete gratis acima de R$299</a>
-        <a class="promo-strip-link" href="{{ route('home') }}">Troca em ate 7 dias</a>
-        <a class="promo-strip-link" href="{{ route('login') }}">Programa de membros GL+</a>
-    </div>
-</header>
-
 
 
 <main>

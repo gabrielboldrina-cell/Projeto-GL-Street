@@ -11,7 +11,6 @@
     --gl-accent-strong: #e53935;
     --gl-accent-soft: rgba(191, 30, 45, 0.18);
 
-    /* Backward-compatible aliases used in existing page CSS */
     --gl-black: var(--gl-bg-0);
     --gl-charcoal: var(--gl-surface);
     --gl-red: var(--gl-accent);

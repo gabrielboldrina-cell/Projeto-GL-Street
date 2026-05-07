@@ -3,7 +3,7 @@
 @section('head')
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre NÃ³s â€” GL Street</title>
+    <title>Sobre GL Street</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="{{ asset('images/branding/capa.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('images/branding/capa.     png') }}">
     <link rel="stylesheet" href="{{ asset('css/Sobre.css') }}">   
     <script src="{{ asset('js/Sobre.js') }}" defer></script>
 @endsection
@@ -53,9 +53,9 @@
         <div class="hero-bg"></div>
         <div class="container hero-content">
             <p class="hero-kicker"><span></span> Nossa histÃ³ria</p>
-            <h1 class="hero-title">Do estÃ¡dio<br>para a <em>rua.</em></h1>
+            <h1 class="hero-title">Do estaio<br>para a <em>rua.</em></h1>
             <p class="hero-sub">
-                A GL Street nasceu de uma paixÃ£o genuÃ­na â€” pelo futebol, pela cultura urbana e pela vontade
+                A GL Street nasceu de uma paixão genuína  pelo futebol, pela cultura urbana e pela vontade
                 de criar algo que representasse de verdade quem vive esses dois mundos ao mesmo tempo.
             </p>
         </div>
@@ -68,17 +68,17 @@
             <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 gap-md-0">
                 <div class="stat-item px-4 px-md-5">
                     <div class="stat-number">+<span>200</span></div>
-                    <div class="stat-label">Produtos no catÃ¡logo</div>
+                    <div class="stat-label">Produtos no catalogo</div>
                 </div>
                 <div class="stat-divider d-none d-md-block"></div>
                 <div class="stat-item px-4 px-md-5">
                     <div class="stat-number"><span>2024</span></div>
-                    <div class="stat-label">Ano de fundaÃ§Ã£o</div>
+                    <div class="stat-label">Ano de fundação</div>
                 </div>
                 <div class="stat-divider d-none d-md-block"></div>
                 <div class="stat-item px-4 px-md-5">
                     <div class="stat-number">1<span>00</span>%</div>
-                    <div class="stat-label">PaixÃ£o pelo esporte</div>
+                    <div class="stat-label">Paixão pelo esporte</div>
                 </div>
                 <div class="stat-divider d-none d-md-block"></div>
                 <div class="stat-item px-4 px-md-5">
@@ -97,7 +97,7 @@
                     <h2 class="section-title">Por que a GL Street existe</h2>
                     <div class="section-body">
                         <p>
-                            Tudo comeÃ§ou com uma ideia simples: criar um espaÃ§o onde a cultura do futebol
+                            Tudo comeÃ§ou com uma ideia simples: criar um espaço onde a cultura do futebol
                             e o streetwear pudessem coexistir sem forÃ§ar a barra. Uma loja que entendesse
                             que a mesma pessoa que vai ao estÃ¡dio no domingo tambÃ©m quer um look que chame
                             atenÃ§Ã£o na segunda-feira.
@@ -118,7 +118,7 @@
                         <blockquote>
                             "Queria criar uma loja que eu mesmo teria vontade de comprar."
                         </blockquote>
-                        <cite>â€” Gabriel, fundador da GL Street</cite>
+                        <cite>— Gabriel, fundador da GL Street</cite>
                     </div>
                 </div>
 
@@ -129,17 +129,17 @@
                         <div class="founder-role">Fundador & Criador</div>
                         <p class="founder-bio">
                             Desenvolvedor, entusiasta de futebol e apaixonado por streetwear.
-                            Criou a GL Street unindo suas maiores referÃªncias â€” a energia dos
-                            grandes jogos e a autenticidade da moda de rua â€” em um Ãºnico projeto
-                            com identidade prÃ³pria.
+                            Criou a GL Street unindo suas maiores referências  a energia dos
+                            grandes jogos e a autenticidade da moda de rua em um único projeto
+                            com identidade própria.
                         </p>
                         <p class="founder-bio mt-3">
-                            Com olhar para tendÃªncias e apreÃ§o pelos detalhes, Gabriel cuida
-                            pessoalmente de cada produto que entra no catÃ¡logo, garantindo que
-                            a essÃªncia da marca esteja em tudo que a loja oferece.
+                            Com olhar para tendências e apreço pelos detalhes, Gabriel cuida
+                            pessoalmente de cada produto que entra no catálogo, garantindo que
+                            a essência da marca esteja em tudo que a loja oferece.
                         </p>
-                        <span class="founder-tag">âš½ Futebol + Street</span>
-                        <span class="founder-tag ms-2">ðŸ’» Desenvolvedor</span>
+                        <span class="founder-tag">Futebol + Street</span>
+                        <span class="founder-tag ms-2">Desenvolvedor</span>
                     </div>
                 </div>
             </div>
@@ -156,32 +156,29 @@
                 <div class="col-md-4 reveal">
                     <div class="pillar-card">
                         <div class="pillar-number">01</div>
-                        <div class="pillar-icon">âš½</div>
-                        <div class="pillar-title">PaixÃ£o pelo futebol</div>
+                        <div class="pillar-title">Paixão pelo futebol</div>
                         <p class="pillar-text">
-                            Futebol nÃ£o Ã© sÃ³ esporte aqui â€” Ã© identidade. Cada produto reflete
-                            o amor pelo jogo, desde a seleÃ§Ã£o brasileira atÃ© as chuteiras que
-                            fazem histÃ³ria nos gramados.
+                            Futebol não é só esporte aqui — é identidade. Cada produto reflete
+                            o amor pelo jogo, desde a seleção brasileira até as chuteiras que
+                            fazem história nos gramados.
                         </p>
                     </div>
                 </div>
                 <div class="col-md-4 reveal">
                     <div class="pillar-card">
                         <div class="pillar-number">02</div>
-                        <div class="pillar-icon">ðŸ™ï¸</div>
                         <div class="pillar-title">Cultura urbana</div>
                         <p class="pillar-text">
-                            Streetwear de verdade tem histÃ³ria, tem atitude. A GL Street cuida
-                            da curadoria pra que cada peÃ§a tenha aquela personalidade que chama
-                            atenÃ§Ã£o na rua sem precisar gritar.
+                            Streetwear de verdade tem história, tem atitude. A GL Street cuida
+                            da curadoria pra que cada peça tenha aquela personalidade que chama
+                            atenção na rua sem precisar gritar.
                         </p>
                     </div>
                 </div>
                 <div class="col-md-4 reveal">
                     <div class="pillar-card">
                         <div class="pillar-number">03</div>
-                        <div class="pillar-icon">âœ¦</div>
-                        <div class="pillar-title">Identidade prÃ³pria</div>
+                        <div class="pillar-title">Identidade própria</div>
                         <p class="pillar-text">
                             NÃ£o seguimos tendÃªncia â€” criamos com referÃªncia. A GL Street tem
                             um ponto de vista claro: produtos com alma, para quem nÃ£o quer
@@ -197,11 +194,11 @@
         <div class="container">
             <div class="row g-5 align-items-start">
                 <div class="col-lg-5 reveal">
-                    <p class="section-label">Nossa trajetÃ³ria</p>
-                    <h2 class="section-title">Como chegamos atÃ© aqui</h2>
+                    <p class="section-label">Nossa trajetória</p>
+                    <h2 class="section-title">Como chegamos até aqui</h2>
                     <p class="section-body">
-                        Do primeiro rascunho atÃ© o lanÃ§amento online, cada etapa foi construÃ­da
-                        com cuidado â€” e com muito amor pelo que a GL Street representa.
+                        Do primeiro rascunho até o lançamento online, cada etapa foi construída
+                        com cuidado — e com muito amor pelo que a GL Street representa.
                     </p>
                 </div>
                 <div class="col-lg-7">
@@ -214,21 +211,21 @@
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
-                            <div class="timeline-year">2025/MarÃ§o â€” InÃ­cio</div>
+                            <div class="timeline-year">2025/Março — Início</div>
                             <div class="timeline-event">Primeiros produtos e curadoria</div>
-                            <p class="timeline-desc">SeleÃ§Ã£o dos primeiros itens, definiÃ§Ã£o da identidade visual e inÃ­cio do desenvolvimento do site.</p>
+                            <p class="timeline-desc">Seleção dos primeiros itens, definição da identidade visual e início do desenvolvimento do site.</p>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
-                            <div class="timeline-year">2025 â€” Final</div>
+                            <div class="timeline-year">2025 — Final</div>
                             <div class="timeline-event">Site entra no ar</div>
-                            <p class="timeline-desc">LanÃ§amento da versÃ£o online com catÃ¡logo completo, sistema de carrinho e pÃ¡ginas de pagamento.</p>
+                            <p class="timeline-desc">Lançamento da versão online com catálogo completo, sistema de carrinho e páginas de pagamento.</p>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-year">2026</div>
                             <div class="timeline-event">Linha Matchday Street & crescimento</div>
-                            <p class="timeline-desc">LanÃ§amento de coleÃ§Ãµes exclusivas e expansÃ£o do catÃ¡logo com mais de 200 produtos disponÃ­veis.</p>
+                            <p class="timeline-desc">Lançamento de coleções exclusivas e expansão do catálogo com mais de 200 produtos disponíveis.</p>
                         </div>
                     </div>
                 </div>
@@ -238,13 +235,13 @@
 
     <section class="cta-section">
         <div class="container reveal">
-            <p class="section-label mb-3">FaÃ§a parte</p>
+            <p class="section-label mb-3">Faça parte</p>
             <h2 class="cta-title">Pronto para encontrar<br>seu estilo?</h2>
             <p class="section-body mt-3 mb-5" style="max-width: 42ch; margin-left: auto; margin-right: auto; text-align: center;">
-                Explore o catÃ¡logo, descubra lanÃ§amentos exclusivos e entre para a comunidade GL Street.
+                Explore o catálogo, descubra lanços exclusivos e entre para a comunidade GL Street.
             </p>
             <div class="d-flex flex-wrap justify-content-center gap-3">
-                <a href="{{ route('home') }}" class="btn-cta btn-cta-primary">Ver catÃ¡logo</a>
+                <a href="{{ route('home') }}" class="btn-cta btn-cta-primary">Ver catálogo</a>
                 <a href="{{ route('cadastro') }}" class="btn-cta btn-cta-ghost">Criar minha conta</a>
             </div>
         </div>
@@ -255,10 +252,10 @@
             <p style="margin-bottom: 8px;">
                 <a href="{{ route('glstreet') }}" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; letter-spacing: 0.14em;">GL Street</a>
             </p>
-            <p>Â© 2026 GL Street. Feito com paixÃ£o pelo futebol e pela rua.</p>
+            <p>© 2026 GL Street. Feito com paixão pelo futebol e pela rua.</p>
             <div class="mt-3 d-flex justify-content-center gap-4 flex-wrap">
-                <a href="{{ route('glstreet') }}">InÃ­cio</a>
-                <a href="{{ route('home') }}">CatÃ¡logo</a>
+                <a href="{{ route('glstreet') }}">Início</a>
+                <a href="{{ route('home') }}">Catálogo</a>
                 <a href="{{ route('login') }}">Login</a>
                 <a href="{{ route('cadastro') }}">Cadastro</a>
             </div>

@@ -11,7 +11,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Ambient background */
 body::before {
     content: "";
     position: fixed;
@@ -36,7 +35,6 @@ body::after {
     z-index: 0;
 }
 
-/* NAVBAR */
 .navbar {
     border-bottom: 1px solid var(--gl-border);
     padding: 14px 28px;
@@ -96,7 +94,7 @@ body::after {
     justify-content: center;
 }
 
-/* LAYOUT */
+
 .page-wrap {
     display: grid;
     grid-template-columns: 260px 1fr;
@@ -105,7 +103,6 @@ body::after {
     z-index: 1;
 }
 
-/* SIDEBAR */
 .sidebar {
     background: linear-gradient(180deg, #181a21 0%, #101218 100%);
     border-right: 1px solid var(--gl-border);
@@ -221,7 +218,6 @@ body::after {
     align-items: start;
 }
 
-/* PRODUCT CARDS */
 .product-card {
     display: flex;
     gap: 20px;
@@ -316,7 +312,7 @@ body::after {
     color: #ffb3a7;
 }
 
-/* Quantity control */
+
 .qty-control {
     display: flex;
     align-items: center;
@@ -398,7 +394,7 @@ body::after {
     color: #ffb3a7;
 }
 
-/* SUMMARY PANEL */
+
 .summary-panel {
     background: linear-gradient(180deg, #1a1c23 0%, #12141b 100%);
     border: 1px solid var(--gl-border);
