@@ -1,0 +1,227 @@
+@extends('layouts.app')
+
+@section('head')
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Carrinho</title>
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+  crossorigin="anonymous" />
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+  crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="{{ asset('js/sweetalert.js') }}"></script>
+<link rel="icon" type="image/png" href="{{ asset('images/branding/capa.png') }}" />
+<link rel="stylesheet" href="{{ asset('css/theme.css') }}" />
+<link rel="stylesheet" href="{{ asset('css/carrinho.css') }}" />
+<script src="{{ asset('js/filtro.js') }}"></script>
+<script src="{{ asset('js/carrinho.js') }}"></script>
+@endsection
+
+@section('navbar')
+<nav class="navbar navbar-expand-lg navbar-dark site-navbar" aria-label="Main navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ route('glstreet') }}">GL Street</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainNavCarrinho"
+      aria-controls="mainNavCarrinho"
+      aria-expanded="false"
+      aria-label="Abrir navegacao">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavCarrinho">
+      <div class="ms-auto site-nav-actions mt-3 mt-lg-0">
+        <a href="{{ route('home') }}" class="site-nav-link nav-link-custom">Início</a>
+        <a href="{{ route('home') }}" class="site-nav-link nav-link-custom">Catálogo</a>
+        <a href="#" class="site-nav-link nav-link-custom">Categorias</a>
+        <a href="#" class="site-cart-link cart-btn">
+          <i class="bi bi-bag"></i>
+          Carrinho
+          <span class="cart-badge">2</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+@endsection
+
+@section('content')
+<!-- NAVBAR -->
+
+
+<div class="page-wrap">
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <p class="sidebar-section-title">Filtros</p>
+    <button class="sidebar-toggle">
+      <i class="bi bi-person"></i> Gênero
+    </button>
+    <ul class="sidebar-sub">
+      <li><button>Masculino</button></li>
+      <li><button>Feminino</button></li>
+    </ul>
+
+    <button class="sidebar-toggle mt-2">
+      <i class="bi bi-bag"></i> Tipo de Produto
+    </button>
+    <ul class="sidebar-sub">
+      <li><button>Todos</button></li>
+      <li><button>Seleção Brasileira</button></li>
+      <li><button>Camisas</button></li>
+      <li><button>Tênis</button></li>
+    </ul>
+
+    <button class="sidebar-toggle mt-2">
+      <i class="bi bi-dribbble"></i> Esportes
+    </button>
+    <ul class="sidebar-sub">
+      <li><button>Chuteira</button></li>
+    </ul>
+
+    <hr class="sidebar-divider" />
+
+    <button class="sidebar-toggle">
+      <i class="bi bi-person-circle"></i> Conta
+    </button>
+    <ul class="sidebar-sub">
+      <li><button>Configurações</button></li>
+      <li><button>Trocar de Conta</button></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <div class="page-header">
+      <h1 class="page-title">Meu Carrinho</h1>
+      <span class="item-count">2 itens</span>
+    </div>
+
+    <div class="cart-layout">
+      <div class="cart-items">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img
+              src="{{ asset('images/selecao/foto5.jpg') }}"
+              alt="Camisa Brasil Jordan II 2026/27 Jogador Masculina"
+              loading="lazy" />
+          </div>
+          <div class="product-info">
+            <div class="product-tag">Seleção Brasileira</div>
+            <p class="product-name">
+              Camisa Brasil Jordan II 2026/27 Jogador Masculina
+            </p>
+            <p class="product-price">R$ 729,99</p>
+          </div>
+          <div class="product-actions">
+            <button class="btn-remove" title="Remover">
+              <i class="bi bi-trash"></i>
+            </button>
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty(this, -1)">
+                âˆ’
+              </button>
+              <span class="qty-value">1</span>
+              <button class="qty-btn" onclick="changeQty(this, 1)">
+                +
+              </button>
+            </div>
+            <div class="product-total">
+              <span>Total</span>
+              R$ 729,99
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img
+              src="{{ asset('images/selecao/foto6.png') }}"
+              alt="Camisa Brasil Jordan II 2026/27 Torcedora Pro Feminina"
+              loading="lazy" />
+          </div>
+          <div class="product-info">
+            <div class="product-tag">Seleção Brasileira</div>
+            <p class="product-name">
+              Camisa Brasil Jordan II 2026/27 Torcedora Pro Feminina
+            </p>
+            <p class="product-price">R$ 429,99</p>
+          </div>
+          <div class="product-actions">
+            <button class="btn-remove" title="Remover">
+              <i class="bi bi-trash"></i>
+            </button>
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty(this, -1)">
+                âˆ’
+              </button>
+              <span class="qty-value">2</span>
+              <button class="qty-btn" onclick="changeQty(this, 1)">
+                +
+              </button>
+            </div>
+            <div class="product-total">
+              <span>Total</span>
+              R$ 859,98
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="summary-panel">
+        <p class="summary-title">Resumo do Pedido</p>
+
+        <div class="summary-line">
+          <span class="label">Subtotal (3 itens)</span>
+          <span class="value">R$ 1.589,97</span>
+        </div>
+        <div class="summary-line">
+          <span class="label">Frete</span>
+          <span class="value free"><i class="bi bi-check-circle-fill me-1"></i>Gratis</span>
+        </div>
+        <div class="summary-line">
+          <span class="label">Desconto</span>
+          <span class="value" style="color: var(--accent2)">— R$ 0,00</span>
+        </div>
+
+        <div class="coupon-row">
+          <input
+            class="coupon-input"
+            type="text"
+            placeholder="Código de cupom" />
+          <button class="coupon-btn">Aplicar</button>
+        </div>
+
+        <div class="summary-total">
+          <span class="total-label">Total</span>
+          <span class="total-value">R$ 1.589,97</span>
+        </div>
+
+        <button
+          class="btn-checkout"
+          onclick="window.location=this.dataset.url"
+          data-url="{{ route('compra') }}">
+          <i class="bi bi-lightning-charge-fill"></i>
+          Finalizar Compra
+        </button>
+
+        <button class="btn-continue">
+          <i class="bi bi-arrow-left"></i>
+          Continuar Comprando
+        </button>
+
+        <div class="security-note">
+          <i class="bi bi-shield-check"></i>
+          Pagamento 100% seguro e criptografado
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@endsection
