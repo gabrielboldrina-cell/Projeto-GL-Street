@@ -54,48 +54,7 @@
 @endsection
 
 @section('content')
-<!-- NAVBAR -->
 
-
-<div class="page-wrap">
-  <!-- SIDEBAR -->
-  <div class="sidebar">
-    <p class="sidebar-section-title">Filtros</p>
-    <button class="sidebar-toggle">
-      <i class="bi bi-person"></i> Gênero
-    </button>
-    <ul class="sidebar-sub">
-      <li><button>Masculino</button></li>
-      <li><button>Feminino</button></li>
-    </ul>
-
-    <button class="sidebar-toggle mt-2">
-      <i class="bi bi-bag"></i> Tipo de Produto
-    </button>
-    <ul class="sidebar-sub">
-      <li><button>Todos</button></li>
-      <li><button>Seleção Brasileira</button></li>
-      <li><button>Camisas</button></li>
-      <li><button>Tênis</button></li>
-    </ul>
-
-    <button class="sidebar-toggle mt-2">
-      <i class="bi bi-dribbble"></i> Esportes
-    </button>
-    <ul class="sidebar-sub">
-      <li><button>Chuteira</button></li>
-    </ul>
-
-    <hr class="sidebar-divider" />
-
-    <button class="sidebar-toggle">
-      <i class="bi bi-person-circle"></i> Conta
-    </button>
-    <ul class="sidebar-sub">
-      <li><button>Configurações</button></li>
-      <li><button>Trocar de Conta</button></li>
-    </ul>
-  </div>
 
   <div class="main-content">
     <div class="page-header">

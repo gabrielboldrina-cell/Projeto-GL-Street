@@ -49,7 +49,7 @@
 
 @section('content')
 
-{{-- Breadcrumb atualizado dinamicamente pelo JS --}}
+// Breadcrumb para navegação do produto
 <div class="produto-breadcrumb">
     <a href="{{ route('glstreet') }}">Início</a>
     <span>›</span>
@@ -60,10 +60,10 @@
     <span id="gl-breadcrumb-nome">Carregando...</span>
 </div>
 
-{{-- Container onde o JS injeta o produto --}}
+// Container onde o React irá renderizar e mostrar os detalhes do produto
 <div id="gl-produto-app"></div>
 
-{{-- JS carregado por último para garantir que o DOM está pronto --}}
+// Script específico para a página de produto, onde o React é inicializado
 <script src="{{ asset('js/produto.js') }}"></script>
 
 @endsection

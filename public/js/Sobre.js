@@ -6,6 +6,6 @@
                     observer.unobserve(e.target);
                 }
             });
-        }, { threshold: 0.12 });
+        }, { threshold: 0.10 });
 
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));

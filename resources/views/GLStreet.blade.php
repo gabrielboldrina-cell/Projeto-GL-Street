@@ -100,7 +100,7 @@
         <div class="container hero-content">
             <div class="row g-4 align-items-end">
                 <div class="col-lg-7">
-                    <p class="hero-kicker">Colecao 2026</p>
+                    <p class="hero-kicker">Coleção 2026</p>
                     <h1 class="hero-title">A energia do estadio, o estilo da rua.</h1>
                     <p class="hero-subtitle">
                         Uma abertura forte, com destaque principal, ritmo visual e chamada direta para compra.
