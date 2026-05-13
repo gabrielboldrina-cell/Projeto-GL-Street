@@ -62,7 +62,7 @@
             </div>
 
             <div class="input-box">
-                <input type="password" placeholder="UsuÃ¡rio" required>
+                <input type="password" placeholder="Usuário" required>
                 <i class='bx bx-bxs-lock-alt'></i>
             </div>
             <div class="input-box">

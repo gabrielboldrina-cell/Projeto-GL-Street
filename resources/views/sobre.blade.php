@@ -52,8 +52,8 @@
 <section class="hero">
         <div class="hero-bg"></div>
         <div class="container hero-content">
-            <p class="hero-kicker"><span></span> Nossa histÃ³ria</p>
-            <h1 class="hero-title">Do estaio<br>para a <em>rua.</em></h1>
+            <p class="hero-kicker"><span></span> Nossa história</p>
+            <h1 class="hero-title">Do estádio<br>para a <em>rua.</em></h1>
             <p class="hero-sub">
                 A GL Street nasceu de uma paixão genuína  pelo futebol, pela cultura urbana e pela vontade
                 de criar algo que representasse de verdade quem vive esses dois mundos ao mesmo tempo.
@@ -72,7 +72,7 @@
                 </div>
                 <div class="stat-divider d-none d-md-block"></div>
                 <div class="stat-item px-4 px-md-5">
-                    <div class="stat-number"><span>2024</span></div>
+                    <div class="stat-number"><span>2026</span></div>
                     <div class="stat-label">Ano de fundação</div>
                 </div>
                 <div class="stat-divider d-none d-md-block"></div>
@@ -97,20 +97,20 @@
                     <h2 class="section-title">Por que a GL Street existe</h2>
                     <div class="section-body">
                         <p>
-                            Tudo comeÃ§ou com uma ideia simples: criar um espaço onde a cultura do futebol
-                            e o streetwear pudessem coexistir sem forÃ§ar a barra. Uma loja que entendesse
-                            que a mesma pessoa que vai ao estÃ¡dio no domingo tambÃ©m quer um look que chame
-                            atenÃ§Ã£o na segunda-feira.
+                            Tudo começou com uma ideia simples: criar um espaço onde a cultura do futebol
+                            e o streetwear pudessem coexistir sem forçar a barra. Uma loja que entendesse
+                            que a mesma pessoa que vai ao estádio no domingo também quer um look que chame
+                            atenção na segunda-feira.
                         </p>
                         <p>
                             A GL Street foi idealizada por Gabriel, apaixonado por futebol e por moda urbana
-                            desde cedo. Cansado de ver o mesmo padrÃ£o nas lojas â€” ou muito esportivo demais,
-                            ou muito fashion sem identidade â€” ele decidiu criar algo prÃ³prio, com curadoria
-                            pensada e uma estÃ©tica que falasse diretamente com quem vive esses dois universos.
+                            desde cedo. Cansado de ver o mesmo padrão nas lojas — ou muito esportivo demais,
+                            ou muito fashion sem identidade — ele decidiu criar algo próprio, com curadoria
+                            pensada e uma estética que falasse diretamente com quem vive esses dois universos.
                         </p>
                         <p>
-                            O projeto comeÃ§ou como um trabalho, mas a ideia foi longe. A GL Street Ã© a prova
-                            de que quando vocÃª combina o que ama com dedicaÃ§Ã£o, o resultado tem personalidade.
+                            O projeto começou como um trabalho, mas a ideia foi longe. A GL Street é a prova
+                            de que quando você combina o que ama com dedicação, o resultado tem personalidade.
                         </p>
                     </div>
 
@@ -139,7 +139,6 @@
                             a essência da marca esteja em tudo que a loja oferece.
                         </p>
                         <span class="founder-tag">Futebol + Street</span>
-                        <span class="founder-tag ms-2">Desenvolvedor</span>
                     </div>
                 </div>
             </div>
@@ -158,7 +157,7 @@
                         <div class="pillar-number">01</div>
                         <div class="pillar-title">Paixão pelo futebol</div>
                         <p class="pillar-text">
-                            Futebol não é só esporte aqui — é identidade. Cada produto reflete
+                            Futebol não é só esporte aqui, é identidade. Cada produto reflete
                             o amor pelo jogo, desde a seleção brasileira até as chuteiras que
                             fazem história nos gramados.
                         </p>
@@ -180,8 +179,8 @@
                         <div class="pillar-number">03</div>
                         <div class="pillar-title">Identidade própria</div>
                         <p class="pillar-text">
-                            NÃ£o seguimos tendÃªncia â€” criamos com referÃªncia. A GL Street tem
-                            um ponto de vista claro: produtos com alma, para quem nÃ£o quer
+                            Não seguimos tendências — criamos com referência. A GL Street tem
+                            um ponto de vista claro: produtos com alma, para quem não quer
                             parecer todo mundo.
                         </p>
                     </div>
@@ -201,34 +200,8 @@
                         com cuidado — e com muito amor pelo que a GL Street representa.
                     </p>
                 </div>
-                <div class="col-lg-7">
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-year">2025</div>
-                            <div class="timeline-event">A ideia nasce</div>
-                            <p class="timeline-desc">Gabriel percebe a lacuna entre o mundo do futebol e o streetwear e comeÃ§a a desenhar o conceito da GL Street.</p>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-year">2025/Março — Início</div>
-                            <div class="timeline-event">Primeiros produtos e curadoria</div>
-                            <p class="timeline-desc">Seleção dos primeiros itens, definição da identidade visual e início do desenvolvimento do site.</p>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-year">2025 — Final</div>
-                            <div class="timeline-event">Site entra no ar</div>
-                            <p class="timeline-desc">Lançamento da versão online com catálogo completo, sistema de carrinho e páginas de pagamento.</p>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-year">2026</div>
-                            <div class="timeline-event">Linha Matchday Street & crescimento</div>
-                            <p class="timeline-desc">Lançamento de coleções exclusivas e expansão do catálogo com mais de 200 produtos disponíveis.</p>
-                        </div>
-                    </div>
-                </div>
+
+                
             </div>
         </div>
     </section>
