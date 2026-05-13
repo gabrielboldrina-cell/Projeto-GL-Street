@@ -87,10 +87,7 @@
               class="btn-toggle d-inline-flex align-items-center rounded collapsed"
               data-bs-toggle="collapse"
               data-bs-target="#home-collapse"
-              aria-expanded="true"
-            >
-              Genero
-            </button>
+              aria-expanded="true" >Genero</button>
             <div class="collapse show" id="home-collapse">
               <ul
                 class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-2"
@@ -106,13 +103,10 @@
               class="btn-toggle d-inline-flex align-items-center rounded collapsed"
               data-bs-toggle="collapse"
               data-bs-target="#tipoproduto"
-              aria-expanded="false"
-            >
-              Tipo de Produto
+              aria-expanded="false"> Tipo de Produto
             </button>
-            <div class="collapse" id="tipoproduto">
-              <ul
-                class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-2"
+            <div class="collapse" id="tipoproduto"><ul
+             class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-2"
               >
                 <li><button class="btn btn-link p-0">Todos</button></li>
                 <li>
@@ -784,114 +778,14 @@
               </div>
             </div>
           </div>
-          <div class="camisa1" data-type="camisa">
-            <div class="produto-card card camisa">
-              <img src="###" class="card-img-top" alt="" />
-              <div class="card-body">
-                <h5 class="card-title">Camisa Nike Estatua Da Liberdade</h5>
-                <p class="card-text">R$ 99,99</p>
-                <button class="btn btn-sm btn-danger" id="btnestatua">
-                  Adicionar ao carrinho
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="camisa1" data-type="camisa">
-            <div class="produto-card card camisa">
-              <img src="###" class="card-img-top" alt="" />
-              <div class="card-body">
-                <h5 class="card-title">Camisa Nike Estatua Da Liberdade</h5>
-                <p class="card-text">R$ 99,99</p>
-                <button class="btn btn-sm btn-danger" id="btnestatua">
-                  Adicionar ao carrinho
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="camisa1" data-type="camisa">
-            <div class="produto-card card camisa">
-              <img src="###" class="card-img-top" alt="" />
-              <div class="card-body">
-                <h5 class="card-title">Camisa Nike Estatua Da Liberdade</h5>
-                <p class="card-text">R$ 99,99</p>
-                <button class="btn btn-sm btn-danger" id="btnestatua">
-                  Adicionar ao carrinho
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="camisa1" data-type="camisa">
-            <div class="produto-card card camisa">
-              <img src="###" class="card-img-top" alt="" />
-              <div class="card-body">
-                <h5 class="card-title">Camisa Nike Estatua Da Liberdade</h5>
-                <p class="card-text">R$ 99,99</p>
-                <button class="btn btn-sm btn-danger" id="btnestatua">
-                  Adicionar ao carrinho
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="camisa1" data-type="camisa">
-            <div class="produto-card card camisa">
-              <img src="###" class="card-img-top" alt="" />
-              <div class="card-body">
-                <h5 class="card-title">Camisa Nike Estatua Da Liberdade</h5>
-                <p class="card-text">R$ 99,99</p>
-                <button class="btn btn-sm btn-danger" id="btnestatua">
-                  Adicionar ao carrinho
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="camisa1" data-type="camisa">
-            <div class="produto-card card camisa">
-              <img src="###" class="card-img-top" alt="" />
-              <div class="card-body">
-                <h5 class="card-title">Camisa Nike Estatua Da Liberdade</h5>
-                <p class="card-text">R$ 99,99</p>
-                <button class="btn btn-sm btn-danger" id="btnestatua">
-                  Adicionar ao carrinho
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="camisa1" data-type="camisa">
-            <div class="produto-card card camisa">
-              <img src="###" class="card-img-top" alt="" />
-              <div class="card-body">
-                <h5 class="card-title">Camisa Nike Estatua Da Liberdade</h5>
-                <p class="card-text">R$ 99,99</p>
-                <button class="btn btn-sm btn-danger" id="btnestatua">
-                  Adicionar ao carrinho
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="camisa1" data-type="camisa">
-            <div class="produto-card card camisa">
-              <img src="###" class="card-img-top" alt="" />
-              <div class="card-body">
-                <h5 class="card-title">Camisa Nike Estatua Da Liberdade</h5>
-                <p class="card-text">R$ 99,99</p>
-                <button class="btn btn-sm btn-danger" id="btnestatua">
-                  Adicionar ao carrinho
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="camisa1" data-type="camisa">
-            <div class="produto-card card camisa">
-              <img src="###" class="card-img-top" alt="" />
-              <div class="card-body">
-                <h5 class="card-title">Camisa Nike Estatua Da Liberdade</h5>
-                <p class="card-text">R$ 99,99</p>
-                <button class="btn btn-sm btn-danger" id="btnestatua">
-                  Adicionar ao carrinho
-                </button>
-              </div>
-            </div>
-          </div>
+ 
+ 
+
+   
+     
+         
+       
+         
         </div>
       </div>
     </div>

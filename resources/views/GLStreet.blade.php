@@ -116,10 +116,10 @@
                     <aside class="drop-card" aria-label="Proximo destaque da loja">
                         <p class="drop-label">Proximo Drop</p>
                         <h2 class="drop-title">Linha Matchday Street</h2>
-                        <div class="drop-highlight">Camisas, tenis e acessorios em edicao limitada.</div>
+                        <div class="drop-highlight">tenis e acessorios em edicao limitada.</div>
                         <ul class="drop-meta">
-                            <li>25/04/2026 - Sabado - 21:00</li>
-                            <li>Lancamento online e retirada na loja</li>
+                            <li>25/05/2026 - Sabado - 21:00</li>
+                            <li>GL Street: não seguimos tendências — a rua segue nossos passos.  </li>
                         </ul>
                         <a class="drop-link" href="{{ route('home') }}">Quero receber aviso</a>
                     </aside>

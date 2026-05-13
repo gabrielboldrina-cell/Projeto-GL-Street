@@ -14,6 +14,7 @@
 <link rel="icon" type="image/png" href="{{ asset('images/branding/capa.png') }}" />
 <link rel="stylesheet" href="{{ asset('css/theme.css') }}" />
 <link rel="stylesheet" href="{{ asset('css/produto.css') }}" />
+<script src="{{ asset('js/produto.js') }}"></script>
 @endsection
 
 @section('navbar')
@@ -59,11 +60,8 @@
     <span>›</span>
     <span id="gl-breadcrumb-nome">Carregando...</span>
 </div>
-
-// Container onde o React irá renderizar e mostrar os detalhes do produto
 <div id="gl-produto-app"></div>
 
-// Script específico para a página de produto, onde o React é inicializado
-<script src="{{ asset('js/produto.js') }}"></script>
+
 
 @endsection
