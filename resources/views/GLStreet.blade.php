@@ -103,8 +103,7 @@
                     <p class="hero-kicker">Coleção 2026</p>
                     <h1 class="hero-title">A energia do estadio, o estilo da rua.</h1>
                     <p class="hero-subtitle">
-                        Uma abertura forte, com destaque principal, ritmo visual e chamada direta para compra.
-                        Inspirada na ideia do SPFC, mas com a identidade da GL Street.
+                       Conheça a GL Street, onde a paixão pelo futebol se encontra com a cultura urbana, Descubra a nova coleção, inspirada na autenticidade das ruas e na emoção dos jogos. Camisas, tenis e acessórios que combinam o melhor dos dois mundos para quem vive o futebol em cada passo.
                     </p>
                     <div class="hero-actions">
                         <a class="btn btn-hero-primary" href="{{ route('home') }}">Ver catalogo</a>
@@ -118,10 +117,10 @@
                         <h2 class="drop-title">Linha Matchday Street</h2>
                         <div class="drop-highlight">tenis e acessorios em edicao limitada.</div>
                         <ul class="drop-meta">
-                            <li>25/05/2026 - Sabado - 21:00</li>
-                            <li>GL Street: não seguimos tendências — a rua segue nossos passos.  </li>
+                            <li>EM BREVE</li>
+                            <li>GL Street: não seguimos tendências, a rua segue <strong>nossos passos</strong>.  </li>
                         </ul>
-                        <a class="drop-link" href="{{ route('home') }}">Quero receber aviso</a>
+                        <a class="drop-link" href="{{ route('home') }}">Quero conhecer</a>
                     </aside>
                 </div>
             </div>
@@ -133,7 +132,7 @@
             <div class="row g-3">
                 <div class="col-md-4">
                     <article class="highlight-card">
-                        <p class="highlight-tag">Destaque</p>
+                        <p class="highlight-tag"> Destaque</p>
                         <h3>Nova camisa retro GL Street</h3>
                         <p>Design classico com tecidos atuais para usar no dia de jogo e no dia a dia.</p>
                     </article>

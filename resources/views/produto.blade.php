@@ -50,7 +50,7 @@
 
 @section('content')
 
-// Breadcrumb para navegação do produto
+ Breadcrumb para navegação do produto
 <div class="produto-breadcrumb">
     <a href="{{ route('glstreet') }}">Início</a>
     <span>›</span>
