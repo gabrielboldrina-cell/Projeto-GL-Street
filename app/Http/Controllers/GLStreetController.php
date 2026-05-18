@@ -7,7 +7,7 @@ class GLStreetController extends Controller
 {
     public function index(Request $request)
     {
-        return view('glstreet');
+        return view('GLStreet');
     }
 }
 

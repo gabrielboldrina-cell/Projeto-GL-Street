@@ -8,4 +8,12 @@ class ProdutoController extends Controller
     {
         return view('produto');
     }
+
+
+    public function cadrastro_produto(Request $request)
+      {
+        return view('cadastro_produto');
+      }  
+
+
 }

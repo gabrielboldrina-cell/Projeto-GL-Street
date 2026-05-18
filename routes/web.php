@@ -18,3 +18,4 @@ Route::get('/carrinho', [CarrinhoController::class, 'index'])->name('carrinho');
 Route::get('/compra', [CompraController::class, 'index'])->name('compra');
 Route::get('/sobre', [SobreController::class, 'index'])->name('sobre');
 Route::get('/produto', [ProdutoController::class, 'index'])->name('produto');
+Route::get('/cadastro_produto', [ProdutoController::class, 'cadrastro_produto'])->name('cadastro_produto');
