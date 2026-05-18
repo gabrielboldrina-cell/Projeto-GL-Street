@@ -47,7 +47,7 @@
             <h1>Login GL Street</h1>
 
             <div class="input-box">
-                <input type="email" placeholder="UsuÃ¡rio/Email" required>
+                <input type="email" placeholder="Usuário/Email" required>
                 <i class='bx bx-bxs-user'></i>
             </div>
 
