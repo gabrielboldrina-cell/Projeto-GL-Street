@@ -1,4 +1,4 @@
-ï»¿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('head')
 <meta charset="UTF-8">
@@ -14,6 +14,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <link rel="icon" type="image/png" href="{{ asset('images/branding/capa.png') }}">
+<link rel="stylesheet" href="{{ asset('css/theme.css') }}?v={{ filemtime(public_path('css/theme.css')) }}">
 <link rel="stylesheet" href="{{ asset('css/GLStreet.css') }}?v={{ filemtime(public_path('css/GLStreet.css')) }}">
 @endsection
 
@@ -100,10 +101,10 @@
         <div class="container hero-content">
             <div class="row g-4 align-items-end">
                 <div class="col-lg-7">
-                    <p class="hero-kicker">ColeÃ§Ã£o 2026</p>
+                    <p class="hero-kicker">Coleção 2026</p>
                     <h1 class="hero-title">A energia do estadio, o estilo da rua.</h1>
                     <p class="hero-subtitle">
-                       ConheÃ§a a GL Street, onde a paixÃ£o pelo futebol se encontra com a cultura urbana, Descubra a nova coleÃ§Ã£o, inspirada na autenticidade das ruas e na emoÃ§Ã£o dos jogos. Camisas, tenis e acessÃ³rios que combinam o melhor dos dois mundos para quem vive o futebol em cada passo.
+                       Conheça a GL Street, onde a paixão pelo futebol se encontra com a cultura urbana, Descubra a nova coleção, inspirada na autenticidade das ruas e na emoção dos jogos. Camisas, tenis e acessórios que combinam o melhor dos dois mundos para quem vive o futebol em cada passo.
                     </p>
                     <div class="hero-actions">
                         <a class="btn btn-hero-primary" href="{{ route('home') }}">Ver catalogo</a>
@@ -118,7 +119,7 @@
                         <div class="drop-highlight">tenis e acessorios em edicao limitada.</div>
                         <ul class="drop-meta">
                             <li>EM BREVE</li>
-                            <li>GL Street: nÃ£o seguimos tendÃªncias, a rua segue <strong>nossos passos</strong>.  </li>
+                            <li>GL Street: não seguimos tendências, a rua segue <strong>nossos passos</strong>.  </li>
                         </ul>
                         <a class="drop-link" href="{{ route('home') }}">Quero conhecer</a>
                     </aside>
@@ -271,10 +272,11 @@
 
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    Â© 2026 Copyright:
+    © 2026 Copyright:
     <a class="fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
   </div>
   <!-- Copyright -->
 </footer>   
 <!-- Footer -->
 @endsection
+

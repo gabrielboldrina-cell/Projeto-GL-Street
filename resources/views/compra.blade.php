@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('head')
 <meta charset="UTF-8">
@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="{{ asset('js/sweetalert.js') }}"></script>
     <link rel="icon" type="image/png" href="{{ asset('images/branding/capa.png') }}">
-    <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/theme.css') }}?v={{ filemtime(public_path('css/theme.css')) }}">
     <link rel="stylesheet" href="{{ asset('css/compra.css') }}">
 @endsection
 
@@ -60,11 +60,11 @@
                     <td><input type="number" step="0.01" placeholder="R$ 100,00" required></td>
                 </tr>
                 <tr>
-                    <td><label>NÂº do CartÃ£o:</label></td>
+                    <td><label>Nº do Cartão:</label></td>
                     <td><input type="text" maxlength="19" placeholder="0000 0000 0000 0000" required></td>
                 </tr>
                 <tr>
-                    <td><label>Nome no CartÃ£o:</label></td>
+                    <td><label>Nome no Cartão:</label></td>
                     <td><input type="text" placeholder="..." required></td>
                 </tr>
                 <tr>
@@ -96,5 +96,6 @@
         </table>
     </div>
 @endsection
+
 
 

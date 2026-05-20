@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('head')
 <meta charset="UTF-8" />
@@ -18,8 +18,9 @@
 <script src="{{ asset('js/sweetalert.js') }}"></script>
 <script src="{{ asset('js/filtro.js') }}"></script>
 <link rel="icon" type="image/png" href="{{ asset('images/branding/capa.png') }}" />
-<link rel="stylesheet" href="{{ asset('css/theme.css') }}" />
+<link rel="stylesheet" href="{{ asset('css/theme.css') }}?v={{ filemtime(public_path('css/theme.css')) }}" />
 <link rel="stylesheet" href="{{ asset('css/home.css') }}" />
+<script src="{{ asset('js/cadastrar.js') }}"></script>
 @endsection
 
 @section('navbar')
@@ -100,8 +101,8 @@
             class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-2">
             <li><button class="btn btn-link p-0">Todos</button></li>
             <li>
-              <button class="btn btn p-0" id="Seleção">
-                Seleção Brasileira
+              <button class="btn btn p-0" id="Sele��o">
+                Sele��o Brasileira
               </button>
             </li>
             <li>
@@ -146,7 +147,7 @@
             class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-2">
             <li>
               <button class="btn btn-link p-0" id="chuteira">
-                tabela Brasileirão A
+                tabela Brasileir�o A
               </button>
               <button class="btn btn-link p-0" id="futebol">
                 Melhores momentos das Rodadas
@@ -176,6 +177,7 @@
             class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-2">
             <li><a href="##">Configuracoes</a></li>
             <li><a href="##">Trocar de Conta</a></li>
+            <li><a href="{{ route('cadastro_produto') }}">Cadastrar Produto</a></li>
           </ul>
         </div>
       </li>
@@ -666,7 +668,7 @@
         <div class="produto-card card camisa">
           <img src="{{ asset('images/camisas/CamisaOversized.png') }}" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">Camisa Oversized Preta/100% Algodão</h5>
+            <h5 class="card-title">Camisa Oversized Preta/100% Algod�o</h5>
             <p class="card-text">R$ 89,99</p>
             <button class="btn btn-sm btn-danger" id="btnestatua">
               Adicionar ao carrinho
@@ -678,7 +680,7 @@
         <div class="produto-card card camisa">
           <img src="{{ asset('images/camisas/CamisaOversizedBranca.png') }}" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">Camisa Oversized Branca/100% Algodão</h5>
+            <h5 class="card-title">Camisa Oversized Branca/100% Algod�o</h5>
             <p class="card-text">R$ 89,99</p>
             <button class="btn btn-sm btn-danger" id="btnestatua">
               Adicionar ao carrinho
@@ -690,7 +692,7 @@
         <div class="produto-card card camisa">
           <img src="{{ asset('images/camisas/CamisaGLStreet.png') }}" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">GL Street / Basquete 100% Algodão</h5>
+            <h5 class="card-title">GL Street / Basquete 100% Algod�o</h5>
             <p class="card-text">R$ 109,90</p>
             <button class="btn btn-sm btn-danger" id="btnestatua">
               Adicionar ao carrinho
@@ -702,7 +704,7 @@
         <div class="produto-card card camisa">
           <img src="{{ asset('images/camisas/Camisa6.png') }}" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">GL Street / Abstract Clash Tee/ 100% Algodão </h5>
+            <h5 class="card-title">GL Street / Abstract Clash Tee/ 100% Algod�o </h5>
             <p class="card-text">R$ 79,99</p>
             <button class="btn btn-sm btn-danger" id="btnestatua">
               Adicionar ao carrinho
@@ -712,9 +714,9 @@
       </div>
       <div class="camisa1" data-type="camisa">
         <div class="produto-card card camisa">
-          <img src="{{ asset('images/camisas/GL Street â€“ Blind Chaos Tee.png') }}" class="card-img-top" alt="" />
+          <img src="{{ asset('images/camisas/GL Street – Blind Chaos Tee.png') }}" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">GL Street / Blind Chaos Tee/ 100% Algodão</h5>
+            <h5 class="card-title">GL Street / Blind Chaos Tee/ 100% Algod�o</h5>
             <p class="card-text">R$ 129,99</p>
             <button class="btn btn-sm btn-danger" id="btnestatua">
               Adicionar ao carrinho
@@ -726,7 +728,7 @@
         <div class="produto-card card camisa">
           <img src="{{ asset('images/camisas/CamisaGLStreetDryfit.png') }}" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">GL Street / Dryfit Academia/Futebol 100% Algodão</h5>
+            <h5 class="card-title">GL Street / Dryfit Academia/Futebol 100% Algod�o</h5>
             <p class="card-text">R$ 99,99</p>
             <button class="btn btn-sm btn-danger" id="btnestatua">
               Adicionar ao carrinho

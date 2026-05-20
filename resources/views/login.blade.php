@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('head')
 <meta charset="UTF-8">
@@ -13,8 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="icon" type="image/png" href="{{ asset('images/branding/capa.png') }}">
-    <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/shared.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/theme.css') }}?v={{ filemtime(public_path('css/theme.css')) }}">
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
      <script src="{{ asset('js/login.js') }}"></script>
 @endsection
@@ -47,7 +46,7 @@
             <h1>Login GL Street</h1>
 
             <div class="input-box">
-                <input type="email" placeholder="Usuário/Email" required>
+                <input type="email" placeholder="Usu�rio/Email" required>
                 <i class='bx bx-bxs-user'></i>
             </div>
 

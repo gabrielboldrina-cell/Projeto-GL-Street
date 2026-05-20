@@ -1,10 +1,11 @@
 <?php
-namespace App\Http\Controllers; 
-use Illuminate\Http\Request;
-class CarrinhoController extends Controller
-{
-    public function index(Request $request)
+
+    namespace App\Http\Controllers; 
+    use Illuminate\Http\Request;
+    class CarrinhoController extends Controller
     {
-        return view('carrinho');
+        public function index(Request $request)
+        {
+            return view('carrinho');
+        }
     }
-}
