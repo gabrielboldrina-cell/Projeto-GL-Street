@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    console.log($("#preco_produto").val().toString().replace(',', '.'));
     $("#btn_cadastrar_produto").click(function () {
         $.ajax({
             type: "POST",
@@ -6,7 +7,7 @@ $(document).ready(function () {
             data: {
                 nome_produto: $("#nome_produto").val(),
                 descricao_produto: $("#descricao_produto").val(),
-                preco_produto: $("#preco_produto").val(),
+                preco_produto: $("#preco_produto").val().toString().replace(',', '.'),
                 quantidade_produto: $("#estoque_produto").val(),
                 tipo_produto: $("#tipo_produto").val(),
             },

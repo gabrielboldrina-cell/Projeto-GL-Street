@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="icon" type="image/png" href="{{ asset('images/branding/capa.png') }}">
     <link rel="stylesheet" href="{{ asset('css/theme.css')}}">
-    
+    <link rel="stylesheet" href="{{ asset('css/cadastro_produto.css')}}">
     <script src="cadastrar.js"></script>
 @endsection
 
@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="product-field">
-                        <label for="preco_produto">Preco do Produto</label>
+                        <label for="preco_produto">Preco do Produto (R$)</label>
                         <input type="text" class="form-control" id="preco_produto" name="preco_produto"
                             placeholder="Ex.: 189,90">
                     </div>

@@ -14,21 +14,22 @@ class CadastarProdutoController extends Controller
 
     public function store(Request $request)
     {
-         Produto::Create([
-            'nome' => 'required',
-            'descricao' => 'nullable',
-            'preco' => 'required|numeric',
-            'estoque' => 'required',
-            'tipo' => 'required',
+         $request->validate([
+            'nome_produto' => 'required',
+            'descricao_produto' => 'nullable',
+            'preco_produto' => 'required|numeric',
+            'quantidade_produto' => 'required',
+            'tipo_produto' => 'required',
         ]);
+      
 
         try {
             $produto = new Produto;
-            $produto->nome = $request->nome;
-            $produto->descricao = $request->descricao;
-            $produto->preco = $request->preco;
-            $produto->estoque = $request->estoque;
-            $produto->tipo = $request->tipo;
+            $produto->nome = $request->nome_produto;
+            $produto->descricao = $request->descricao_produto;
+            $produto->preco = $request->preco_produto;
+            $produto->estoque = $request->quantidade_produto;
+            $produto->tipo = $request->tipo_produto;
             $produto->save();
 
 
