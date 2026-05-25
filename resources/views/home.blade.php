@@ -102,7 +102,7 @@
             <li><button class="btn btn-link p-0">Todos</button></li>
             <li>
               <button class="btn btn p-0" id="Sele��o">
-                Sele��o Brasileira
+                Seleção Brasileira
               </button>
             </li>
             <li>
@@ -147,7 +147,7 @@
             class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-2">
             <li>
               <button class="btn btn-link p-0" id="chuteira">
-                tabela Brasileir�o A
+                tabela Brasileirão A
               </button>
               <button class="btn btn-link p-0" id="futebol">
                 Melhores momentos das Rodadas
@@ -544,8 +544,7 @@
             alt="" />
           <div class="card-body">
             <h5 class="card-title">
-              Chuteira Nike Campo Mercurial Vapor 15 Club DJ5963-600
-            </h5>
+              Chuteira Nike Campo Mercurial Vapor 15 Clube
             <p class="card-text">R$ 314,93</p>
             <button class="btn btn-sm btn-danger" id="btn15">
               Adicionar ao carrinho
@@ -668,7 +667,7 @@
         <div class="produto-card card camisa">
           <img src="{{ asset('images/camisas/CamisaOversized.png') }}" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">Camisa Oversized Preta/100% Algod�o</h5>
+            <h5 class="card-title">Camisa Oversized Preta/100% Algodão</h5>
             <p class="card-text">R$ 89,99</p>
             <button class="btn btn-sm btn-danger" id="btnestatua">
               Adicionar ao carrinho
@@ -680,7 +679,7 @@
         <div class="produto-card card camisa">
           <img src="{{ asset('images/camisas/CamisaOversizedBranca.png') }}" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">Camisa Oversized Branca/100% Algod�o</h5>
+            <h5 class="card-title">Camisa Oversized Branca/100% Algodão</h5>
             <p class="card-text">R$ 89,99</p>
             <button class="btn btn-sm btn-danger" id="btnestatua">
               Adicionar ao carrinho
@@ -692,7 +691,7 @@
         <div class="produto-card card camisa">
           <img src="{{ asset('images/camisas/CamisaGLStreet.png') }}" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">GL Street / Basquete 100% Algod�o</h5>
+            <h5 class="card-title">GL Street / Basquete 100% Algodão</h5>
             <p class="card-text">R$ 109,90</p>
             <button class="btn btn-sm btn-danger" id="btnestatua">
               Adicionar ao carrinho
@@ -704,7 +703,7 @@
         <div class="produto-card card camisa">
           <img src="{{ asset('images/camisas/Camisa6.png') }}" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">GL Street / Abstract Clash Tee/ 100% Algod�o </h5>
+            <h5 class="card-title">GL Street / Abstract Clash Tee/ 100% Algodão </h5>
             <p class="card-text">R$ 79,99</p>
             <button class="btn btn-sm btn-danger" id="btnestatua">
               Adicionar ao carrinho
@@ -716,7 +715,7 @@
         <div class="produto-card card camisa">
           <img src="{{ asset('images/camisas/GL Street – Blind Chaos Tee.png') }}" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">GL Street / Blind Chaos Tee/ 100% Algod�o</h5>
+            <h5 class="card-title">GL Street / Blind Chaos Tee/ 100% Algodão</h5>
             <p class="card-text">R$ 129,99</p>
             <button class="btn btn-sm btn-danger" id="btnestatua">
               Adicionar ao carrinho
@@ -728,7 +727,7 @@
         <div class="produto-card card camisa">
           <img src="{{ asset('images/camisas/CamisaGLStreetDryfit.png') }}" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">GL Street / Dryfit Academia/Futebol 100% Algod�o</h5>
+            <h5 class="card-title">GL Street / Dryfit Academia/Futebol 100% Algodão</h5>
             <p class="card-text">R$ 99,99</p>
             <button class="btn btn-sm btn-danger" id="btnestatua">
               Adicionar ao carrinho
@@ -740,8 +739,8 @@
         <div class="produto-card card camisa">
           <img src="###" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">Camisa Nike Estatua Da Liberdade</h5>
-            <p class="card-text">R$ 99,99</p>
+            <h5 class="card-title">.....</h5>
+            <p class="card-text">R$...</p>
             <button class="btn btn-sm btn-danger" id="btnestatua">
               Adicionar ao carrinho
             </button>

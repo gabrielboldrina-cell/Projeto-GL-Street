@@ -15,7 +15,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="icon" type="image/png" href="{{ asset('images/branding/capa.png') }}">
     <link rel="stylesheet" href="{{ asset('css/theme.css') }}?v={{ filemtime(public_path('css/theme.css')) }}">
-    <link rel="stylesheet" href="{{ asset('css/GLStreet.css') }}">
 </head>
 
 <body>

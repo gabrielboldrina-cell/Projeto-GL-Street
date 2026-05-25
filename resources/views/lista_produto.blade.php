@@ -18,7 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="icon" type="image/png" href="{{ asset('images/branding/capa.png') }}">
     <link rel="stylesheet" href="{{ asset('css/theme.css') }}?v={{ filemtime(public_path('css/theme.css')) }}">
-    <link rel="stylesheet" href="{{ asset('css/GLStreet.css') }}?v={{ filemtime(public_path('css/GLStreet.css')) }}">
+    
 </head>
 
 <body>
@@ -32,7 +32,6 @@
                     <th scope="col">Descrição</th>
                     <th scope="col">Preço</th>
                     <th scope="col">Estoque</th>
-                    <th scope="col">Data de Validade</th>
                     <th scope="col">Tipo</th>
                 </tr>
             </thead>
@@ -45,7 +44,6 @@
                     <td>{{ $p->descricao }}</td>
                     <td>{{ $p->preco }}</td>
                     <td>{{ $p->estoque }}</td>
-                    <td>{{ $p->data_validade }}</td>
                     <td>{{ $p->tipo }}</td>
                 </tr>
                 @endforeach

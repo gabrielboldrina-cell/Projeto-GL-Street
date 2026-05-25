@@ -1,0 +1,201 @@
+.product-register-page {
+    position: relative;
+    padding: clamp(28px, 5vw, 56px) 0 68px;
+    isolation: isolate;
+}
+
+.product-register-page::before,
+.product-register-page::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.product-register-page::before {
+    width: min(58vw, 520px);
+    height: min(58vw, 520px);
+    top: -140px;
+    left: -180px;
+    background: radial-gradient(circle, rgba(191, 30, 45, 0.2) 0%, rgba(191, 30, 45, 0) 68%);
+}
+
+.product-register-page::after {
+    width: min(52vw, 460px);
+    height: min(52vw, 460px);
+    right: -170px;
+    bottom: -180px;
+    background: radial-gradient(circle, rgba(229, 57, 53, 0.16) 0%, rgba(229, 57, 53, 0) 70%);
+}
+
+.product-register-shell {
+    max-width: 940px;
+}
+
+.product-register-card {
+    position: relative;
+    border: 1px solid var(--gl-border);
+    border-radius: 24px;
+    padding: clamp(24px, 4vw, 44px);
+    background: linear-gradient(152deg, rgba(26, 28, 35, 0.95), rgba(11, 12, 16, 0.95));
+    box-shadow: 0 24px 56px rgba(0, 0, 0, 0.52);
+    overflow: hidden;
+    animation: productCardIn 0.45s ease;
+}
+
+.product-register-card::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(191, 30, 45, 0), rgba(191, 30, 45, 0.95), rgba(191, 30, 45, 0));
+}
+
+.product-register-header {
+    margin-bottom: 26px;
+}
+
+.product-register-kicker {
+    margin-bottom: 8px;
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #f3b8bf;
+}
+
+.product-register-header h1 {
+    margin: 0;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.product-register-subtitle {
+    margin: 12px 0 0;
+    max-width: 60ch;
+    color: var(--gl-text-muted);
+    font-size: 0.94rem;
+    line-height: 1.55;
+}
+
+.product-register-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.product-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.product-field--full {
+    grid-column: 1 / -1;
+}
+
+.product-field label {
+    margin: 0;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gl-text-muted);
+}
+
+.product-register-card .form-control {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    padding: 0.76rem 0.94rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.product-register-card .form-control:focus {
+    border-color: rgba(191, 30, 45, 0.7);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 0 0.22rem rgba(191, 30, 45, 0.22);
+    color: #ffffff;
+}
+
+.product-register-card .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.46);
+}
+
+.product-register-card textarea.form-control {
+    min-height: 128px;
+    resize: vertical;
+}
+
+.product-register-card input[type="date"] {
+    color-scheme: dark;
+}
+
+.product-register-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 26px;
+}
+
+.product-register-actions .btn {
+    border-radius: 12px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.8rem 1.1rem;
+}
+
+.product-btn-primary {
+    min-width: 230px;
+    background: linear-gradient(135deg, var(--gl-accent), var(--gl-accent-strong));
+    border: none;
+}
+
+.product-btn-primary:hover,
+.product-btn-primary:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 24px rgba(191, 30, 45, 0.28);
+}
+
+.product-btn-secondary {
+    border-color: rgba(255, 255, 255, 0.38);
+    color: #ffffff;
+}
+
+.product-btn-secondary:hover,
+.product-btn-secondary:focus {
+    border-color: rgba(255, 255, 255, 0.72);
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+@keyframes productCardIn {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .product-register-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-field--full {
+        grid-column: auto;
+    }
+
+    .product-register-actions .btn {
+        width: 100%;
+    }
+}

@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    alert("teste");
     $("#btn_cadastrar_produto").click(function () {
         $.ajax({
             type: "POST",
@@ -9,7 +8,6 @@ $(document).ready(function () {
                 descricao_produto: $("#descricao_produto").val(),
                 preco_produto: $("#preco_produto").val(),
                 quantidade_produto: $("#estoque_produto").val(),
-                data_validade: $("#data_validade").val(),
                 tipo_produto: $("#tipo_produto").val(),
             },
             dataType: "JSON",
