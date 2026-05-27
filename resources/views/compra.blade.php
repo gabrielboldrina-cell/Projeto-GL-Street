@@ -13,8 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="{{ asset('js/sweetalert.js') }}"></script>
     <link rel="icon" type="image/png" href="{{ asset('images/branding/capa.png') }}">
-    <link rel="stylesheet" href="{{ asset('css/theme.css') }}?v={{ filemtime(public_path('css/theme.css')) }}">
-    <link rel="stylesheet" href="{{ asset('css/compra.css') }}">
+    <link rel="stylesheet" href="{{ url('css/theme.css') }} ">
 @endsection
 
 @section('navbar')

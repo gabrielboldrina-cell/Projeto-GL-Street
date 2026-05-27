@@ -1,5 +1,29 @@
 @extends('layouts.app')
 
+@section('head')
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Home</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+  crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+  crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<link rel="icon" type="image/png" href="{{ url('images/branding/capa.png') }}" />
+<link rel="stylesheet" href="{{ url('css/theme.css') }}" />
+<link rel="stylesheet" href="{{ url('css/home.css') }}" />
+
+<script src="{{ url('js/sweetalert.js') }}"></script>
+<script src="{{ url('js/filtro.js') }}"></script>
+<script src="{{ url('cadastrar.js') }}"></script>
+
+@endsection
 
 @section('navbar')
 <nav
@@ -79,7 +103,7 @@
             class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-2">
             <li><button class="btn btn-link p-0">Todos</button></li>
             <li>
-              <button class="btn btn p-0" id="Sele��o">
+              <button class="btn btn p-0" id="Seleção">
                 Seleção Brasileira
               </button>
             </li>

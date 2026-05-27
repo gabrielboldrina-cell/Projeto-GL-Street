@@ -13,9 +13,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="{{ asset('images/branding/capa.png') }}">
-    <link rel="stylesheet" href="{{ asset('css/Sobre.css') }}">   
-    <script src="{{ asset('js/Sobre.js') }}" defer></script>
+    <link rel="icon" type="image/png" href="{{ url('images/branding/capa.png') }}">
+    <link rel="stylesheet" href="{{ url('css/Sobre.css') }}">   
+    <script src="{{ url('js/Sobre.js') }}" defer></script>
 @endsection
 
 @section('navbar')

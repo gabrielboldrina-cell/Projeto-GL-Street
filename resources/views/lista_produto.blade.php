@@ -1,8 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Produtos</title>
@@ -16,9 +15,9 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="icon" type="image/png" href="{{ asset('images/branding/capa.png') }}">
-    <link rel="stylesheet" href="{{ asset('css/theme.css') }}?v={{ filemtime(public_path('css/theme.css')) }}">
-    
+    <link rel="icon" type="image/png" href="{{ url('images/branding/capa.png') }}">
+    <link rel="stylesheet" href="{{ url('css/theme.css') }} ">
+    <link rel="stylesheet" href="{{ url('css/lista_produto.css') }} ">
 </head>
 
 <body>
@@ -37,15 +36,14 @@
             </thead>
             <tbody>
                 @foreach ($produtos as $p)
-                                    
-                <tr>
-                    <th scope="row">{{ $p->id }}</th>
-                    <td>{{ $p->nome }}</td>
-                    <td>{{ $p->descricao }}</td>
-                    <td>{{ $p->preco }}</td>
-                    <td>{{ $p->estoque }}</td>
-                    <td>{{ $p->tipo }}</td>
-                </tr>
+                    <tr>
+                        <th scope="row">{{ $p->id }}</th>
+                        <td>{{ $p->nome }}</td>
+                        <td>{{ $p->descricao }}</td>
+                        <td>{{ $p->preco }}</td>
+                        <td>{{ $p->estoque }}</td>
+                        <td>{{ $p->tipo }}</td>
+                    </tr>
                 @endforeach
             </tbody>
         </table>

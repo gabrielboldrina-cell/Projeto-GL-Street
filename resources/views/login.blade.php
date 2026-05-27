@@ -12,10 +12,10 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="icon" type="image/png" href="{{ asset('images/branding/capa.png') }}">
-    <link rel="stylesheet" href="{{ asset('css/theme.css') }}?v={{ filemtime(public_path('css/theme.css')) }}">
-    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
-     <script src="{{ asset('js/login.js') }}"></script>
+    <link rel="icon" type="image/png" href="{{ url('images/branding/capa.png') }}">
+    <link rel="stylesheet" href="{{ url('css/theme.css') }}">
+    <link rel="stylesheet" href="{{ url('css/login.css') }}">
+     <script src="{{ url('js/login.js') }}"></script>
 @endsection
 
 @section('navbar')
