@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -16,38 +16,39 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="icon" type="image/png" href="{{ url('images/branding/capa.png') }}">
-    <link rel="stylesheet" href="{{ url('css/theme.css') }} ">
-    <link rel="stylesheet" href="{{ url('css/lista_produto.css') }} ">
+    <link rel="stylesheet" href="{{ asset('css/lista_produto.css') }} ">
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="text-center">Lista de Produtos</h1>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Nome</th>
-                    <th scope="col">Descrição</th>
-                    <th scope="col">Preço</th>
-                    <th scope="col">Estoque</th>
-                    <th scope="col">Tipo</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($produtos as $p)
+    <header>
+        <div class="container">
+            <h1 class="text-center">Lista de Produtos</h1>
+            <table class="table">
+                <thead>
                     <tr>
-                        <th scope="row">{{ $p->id }}</th>
-                        <td>{{ $p->nome }}</td>
-                        <td>{{ $p->descricao }}</td>
-                        <td>{{ $p->preco }}</td>
-                        <td>{{ $p->estoque }}</td>
-                        <td>{{ $p->tipo }}</td>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Descrição</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Estoque</th>
+                        <th scope="col">Tipo</th>
                     </tr>
-                @endforeach
-            </tbody>
-        </table>
-    </div>
+                </thead>
+                <tbody>
+                    @foreach ($produtos as $p)
+                        <tr>
+                            <th scope="row">{{ $p->id }}</th>
+                            <td>{{ $p->nome }}</td>
+                            <td>{{ $p->descricao }}</td>
+                            <td>{{ $p->preco }}</td>
+                            <td>{{ $p->estoque }}</td>
+                            <td>{{ $p->tipo }}</td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+    </header>
 </body>
 
 </html>
