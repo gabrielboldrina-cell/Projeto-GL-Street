@@ -15,7 +15,7 @@
     <link rel="icon" type="image/png" href="{{ url('images/branding/capa.png') }}">
     <link rel="stylesheet" href="{{ url('css/theme.css') }}">
     <link rel="stylesheet" href="{{ url('css/cadastro.css') }} ">
-    <script src="{{ url('js/cadastrar.js') }}"></script>
+    <script src="{{ url('cadastrar.js') }}"></script>
 @endsection
 
 @section('navbar')
@@ -196,4 +196,3 @@
         </div>
     </div>
 @endsection
-
