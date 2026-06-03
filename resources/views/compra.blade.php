@@ -14,6 +14,7 @@
     <script src="{{ asset('js/sweetalert.js') }}"></script>
     <link rel="icon" type="image/png" href="{{ asset('images/branding/capa.png') }}">
     <link rel="stylesheet" href="{{ url('css/theme.css') }} ">
+    <link rel="stylesheet" href="{{ url('css/compra.css') }} ">
 @endsection
 
 @section('navbar')

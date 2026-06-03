@@ -16,7 +16,8 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="icon" type="image/png" href="{{ url('images/branding/capa.png') }}">
     <link rel="stylesheet" href="{{ url('css/theme.css') }} ">
-    <script src="{{ asset('cadastrar.js') }}"></script>
+    <script src="{{ asset('js/cadastrar.js') }}"></script>
+    <link rel="stylesheet" href="{{ url('css/cadastro_produto.css') }}">
 @endsection
 
 @section('content')
