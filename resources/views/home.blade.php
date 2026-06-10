@@ -180,6 +180,7 @@
             <li><a href="##">Configuracoes</a></li>
             <li><a href="##">Trocar de Conta</a></li>
             <li><a href="{{ route('cadastro_produto') }}">Cadastrar Produto</a></li>
+            <li><a href="{{ route('vizualizar_produto', ['id' => 1]) }}">Visualizar Produto</a></li>
           </ul>
         </div>
       </li>
@@ -715,7 +716,7 @@
       </div>
       <div class="camisa1" data-type="camisa">
         <div class="produto-card card camisa">
-          <img src="{{ asset('images/camisas/GL Street – Blind Chaos Tee.png') }}" class="card-img-top" alt="" />
+          <img src="{{ asset('images/camisas/GL Street Blind Chaos Tee.png') }}" class="card-img-top" alt="" />
           <div class="card-body">
             <h5 class="card-title">GL Street / Blind Chaos Tee/ 100% Algodão</h5>
             <p class="card-text">R$ 129,99</p>

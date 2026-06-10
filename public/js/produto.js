@@ -179,4 +179,4 @@ const GL_PRODUTOS = {
         tamanhos: ["PP", "P", "M", "G", "GG", "XGG"],
         descricao: "A camisa de jogo oficial da Seleção Brasileira 2026/27 pela Nike. Tecnologia Dri-FIT ADV para atletas de elite, com design que carrega toda a identidade do futebol brasileiro."
     },
-
+}
