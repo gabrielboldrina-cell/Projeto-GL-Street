@@ -61,4 +61,10 @@ class CadastarProdutoController extends Controller
 
         return view('lista_produto') ->with('produtos', $produtos);
     }
+
+
+    publi
+
+
 }
+
