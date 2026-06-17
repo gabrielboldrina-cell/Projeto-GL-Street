@@ -144,20 +144,20 @@
           class="btn-toggle d-inline-flex align-items-center rounded collapsed"
           data-bs-toggle="collapse"
           data-bs-target="#esportes" aria-expanded="false"> Arena GL </button>
-        <div class="collapse" id="esportes">
+        <div class="collapse" id="ArenaGL">
           <ul
             class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-2">
             <li>
-              <button class="btn btn-link p-0" id="chuteira">
+              <button class="btn btn-link p-0" id="brasileirão">
                 tabela Brasileirão A
               </button>
-              <button class="btn btn-link p-0" id="futebol">
+              <button class="btn btn-link p-0" id="Rodadas">
                 Melhores momentos das Rodadas
               </button>
-              <button class="btn btn-link p-0" id="Basquete">
+              <button class="btn btn-link p-0" id="NBA">
                 Tabela NBA
               </button>
-              <button class="btn btn-link p-0" id="Basquete">
+              <button class="btn btn-link p-0" id="Melhores Momentos">
                 Melhores momentos da NBA
               </button>
 

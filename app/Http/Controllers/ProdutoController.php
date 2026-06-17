@@ -86,16 +86,34 @@ class ProdutoController extends Controller
     ]);
 
     try {
+    $produto = Produto::where('id', $resquest->produto_id)->first();
 
+    if ($produto) {
+      $produto->delete();
 
+      $data = [];
+      $data = [
+        'erro' => 'n',
+        'msg' => 'Produto deletado com sucesso!'
+      ];
+    } else {
+      $data = [];
+      $data = [
+        'erro' => 's',
+        'msg' => 'Produto não encontrado!'
+      ];
+    }
+    return response()->json($data, 200);
     }catch(\throwable $th){
       throw $th;
-      
+      $data = [];
+      $data = [
+        'erro' => 's',
+        'msg' => 'Erro ao deletar produto: ' . $th->getMessage()
+      ];
+
     }
     }
    
-
-
-
 
 }

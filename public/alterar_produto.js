@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $("#btn_alterar").click(function () {
         $.ajax({
             type: "PUT",
@@ -34,7 +35,9 @@ $(document).ready(function () {
         });
     });
 
-    $("#btn_deletar").click(function () {
+
+      $("#btn_deletar_produto").click(function () {
+
         $.ajax({
             url: "../api/deletar_produto",
             type: "DELETE",
@@ -61,12 +64,14 @@ $(document).ready(function () {
                     });
 
                 }
-                
+
             },
 
         });
 
     });
+
+  
 
 
 });

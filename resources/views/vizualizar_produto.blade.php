@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualizar Produto</title>
+    <title>Alterar Produto</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -17,14 +17,14 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="icon" type="image/png" href="{{ url('images/branding/capa.png') }}">
     <link rel="stylesheet" href="{{ url('css/theme.css') }} ">
-    <script src="{{ url('js/alterar_produto.js') }}"></script>
+    <script  src="{{ url('alterar_produto.js') }}"></script>
 
 </head>
 
 <body>
     <header class="product-register-header">
         <p class="product-register-kicker">Area administrativa</p>
-        <h3>Vizualizar Produto</h3>
+        <h3>Alterar Produto</h3>
         <p class="product-register-subtitle">
             Preencha os campos para incluir, alterar ou deletar um novo item no estoque da GL Street.
         </p>
@@ -70,7 +70,7 @@
         <button class="btn btn-warning product-btn-primary" id="btn_alterar" type="button">
             Alterar Produto
         </button>
-        <button class="btn btn-danger product-btn-primary" id="btn_deletar" type="button">
+        <button class="btn btn-danger product-btn-primary" id="btn_deletar_produto" type="button">
             Deletar Produto
         </button>
         <a href="{{ route('lista_produto') }}" class="btn btn-outline-light product-btn-secondary">

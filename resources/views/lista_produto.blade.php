@@ -22,6 +22,11 @@
 
 @section('content')
     <div class="container">
+        
+            <a href="{{ route('cadastro_produto') }}" class="btn btn-danger mb-3 product-btn-primary">
+                Cadastrar Novo Produto
+            </a>
+       
         <h1 class="text-center">Lista de Produtos</h1>
         <table class="table">
             <thead>
@@ -32,6 +37,7 @@
                     <th scope="col">Preço</th>
                     <th scope="col">Estoque</th>
                     <th scope="col">Tipo</th>
+                    <th scope="col">Visualizar</th>
                 </tr>
             </thead>
             <tbody>
@@ -43,9 +49,17 @@
                         <td>{{ $p->preco }}</td>
                         <td>{{ $p->estoque }}</td>
                         <td>{{ $p->tipo }}</td>
+                        <td>
+                            <a href="{{ route('vizualizar_produto', ['id' => $p->id]) }}" class="btn btn-primary">
+                                Visualizar
+                            </a>
+                        </td>
                     </tr>
                 @endforeach
             </tbody>
         </table>
+
+
+
     </div>
 @endsection
