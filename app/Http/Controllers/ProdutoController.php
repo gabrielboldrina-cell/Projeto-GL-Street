@@ -55,7 +55,7 @@ class ProdutoController extends Controller
 
         $data = [
           'erro' => 'n',
-          'msg' => 'Produto cadastrado com sucesso!'
+          'msg' => 'Produto alterado com sucesso!'
         ];
       }else{
         $data = [];
@@ -72,10 +72,30 @@ class ProdutoController extends Controller
 
       $data = [
         'erro' => 's',
-        'msg' => 'Erro ao cadastrar produto: ' . $th->getMessage()
+        'msg' => 'Erro ao alterar produto: ' . $th->getMessage()
       ];
 
       return response()->json($data, 200);
     }
   }
+
+  public function deletar_produto(Request $resquest)
+  {
+    $resquest->validate([
+      'produto_id' => 'required|integer',
+    ]);
+
+    try {
+
+
+    }catch(\throwable $th){
+      throw $th;
+      
+    }
+    }
+   
+
+
+
+
 }

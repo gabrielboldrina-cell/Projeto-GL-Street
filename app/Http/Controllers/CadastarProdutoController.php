@@ -63,8 +63,5 @@ class CadastarProdutoController extends Controller
     }
 
 
-    publi
-
-
 }
 

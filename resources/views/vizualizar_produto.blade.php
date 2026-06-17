@@ -17,7 +17,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="icon" type="image/png" href="{{ url('images/branding/capa.png') }}">
     <link rel="stylesheet" href="{{ url('css/theme.css') }} ">
-    <link rel="stylesheet" href="{{ url('css/cadastro_produto.css') }}">
     <script src="{{ url('js/alterar_produto.js') }}"></script>
 
 </head>
@@ -27,7 +26,7 @@
         <p class="product-register-kicker">Area administrativa</p>
         <h3>Vizualizar Produto</h3>
         <p class="product-register-subtitle">
-            Preencha os campos para incluir um novo item no estoque da GL Street.
+            Preencha os campos para incluir, alterar ou deletar um novo item no estoque da GL Street.
         </p>
     </header>
     
@@ -68,8 +67,11 @@
     </div>
 
     <div class="product-register-actions">
-        <button class="btn btn-warningproduct-btn-primary" id="btn_alterar" type="button">
+        <button class="btn btn-warning product-btn-primary" id="btn_alterar" type="button">
             Alterar Produto
+        </button>
+        <button class="btn btn-danger product-btn-primary" id="btn_deletar" type="button">
+            Deletar Produto
         </button>
         <a href="{{ route('lista_produto') }}" class="btn btn-outline-light product-btn-secondary">
             Lista de Produtos

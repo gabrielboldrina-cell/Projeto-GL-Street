@@ -181,7 +181,6 @@
             <li><a href="##">Trocar de Conta</a></li>
             <li><a href="{{ route('cadastro_produto') }}">Cadastrar Produto</a></li>
             <li><a href="{{ route('vizualizar_produto', ['id' => 1]) }}">Visualizar Produto</a></li>
-            <li><a href="{{ route('deletar_produto') }}">Deletar Produtos</a></li>
           </ul>
         </div>
       </li>
