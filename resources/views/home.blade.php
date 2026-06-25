@@ -180,7 +180,7 @@
             <li><a href="##">Configuracoes</a></li>
             <li><a href="##">Trocar de Conta</a></li>
             <li><a href="{{ route('cadastro_produto') }}">Cadastrar Produto</a></li>
-            <li><a href="{{ route('vizualizar_produto', ['id' => 1]) }}">Visualizar Produto</a></li>
+            <li><a href="{{ r   oute('lista_produto', ['id' => 1]) }}">Lista de Produtos</a></li>
           </ul>
         </div>
       </li>
