@@ -10,16 +10,13 @@
     --gl-surface-up:   #1a1c23;
 }
 
-/* ============================================================
-   RESET / BASE
-   ============================================================ */
-*,
+
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-/* PAGE LAYOUT */
+
 body {
     min-height: 100vh;
     background: radial-gradient(circle at top, #1a1a1a 0%, #080808 48%, #040404 100%);

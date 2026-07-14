@@ -11,9 +11,8 @@ use App\Http\Controllers\SobreController;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\CadastarProdutoController;
 
-Route::get('/', [GLStreetController::class, 'index'])->name('glstreet');
+Route::get('/', [LoginController::class, 'index'])->name('glstreet');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::get('/cadastro', [CadastroController::class, 'index'])->name('cadastro');
 Route::get('/carrinho', [CarrinhoController::class, 'index'])->name('carrinho');
 Route::get('/compra', [CompraController::class, 'index'])->name('compra');

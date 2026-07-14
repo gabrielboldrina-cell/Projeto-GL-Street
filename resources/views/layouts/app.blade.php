@@ -3,7 +3,7 @@
 <head>
     @yield('head')
 </head>
-<body>
+<body class="@yield('body_class')">
     @yield('navbar')
 
     @yield('content')

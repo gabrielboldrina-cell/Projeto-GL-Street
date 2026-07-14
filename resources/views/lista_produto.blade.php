@@ -26,7 +26,11 @@
             <a href="{{ route('cadastro_produto') }}" class="btn btn-danger mb-3 product-btn-primary">
                 Cadastrar Novo Produto
             </a>
+            <a href="{{ route('home') }}" class="btn btn-danger mb-3 product-btn-primary">
+                Voltar
+            </a>
        
+    
         <h1 class="text-center">Lista de Produtos</h1>
         <table class="table">
             <thead>
