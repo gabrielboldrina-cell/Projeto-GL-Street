@@ -14,10 +14,11 @@ return new class extends Migration
         Schema::create('vendedores', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->text('descricao')->nullable();
-            $table->decimal('preco', 10, 2)->default(0.00);
-            $table->integer('estoque')->default(0);
-            $table->string('tipo')->nullable();
+            $table->string('cpf', 14)->unique();
+            $table->date('data_nascimento');
+            $table->string('email', 255)->unique();
+            $table->string('tipo');
+            $table->string('senha');
             $table->timestamps();
         });
     }

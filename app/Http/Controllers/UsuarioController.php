@@ -15,6 +15,7 @@ class UsuarioController extends Controller
                 'nome' => 'required|string|max:255',
                 'email' => 'required|string|email|max:255|unique:usuario,email',
                 'senha' => 'required|string|',
+                'tipo' => 'required|string|max:50',
             ]);
 
             try {
@@ -22,6 +23,7 @@ class UsuarioController extends Controller
                 $usuario->nome = $request->nome;
                 $usuario->email = $request->email;
                 $usuario->senha = Hash::make($request->senha);
+                $usuario->tipo = $request->tipo;
 
                 $usuario->save();
 
@@ -63,7 +65,8 @@ class UsuarioController extends Controller
                 'id' => 'required|integer|exists:usuarios,id',
                 'nome' => 'required|string|max:255',
                 'email' => 'required|string|email|max:255|',
-                'senha' => 'required|string|',
+                'senha' => 'required|string|min:6',
+                'tipo' => 'required|string|max:50',
             ]);
 
             try {
@@ -79,6 +82,7 @@ class UsuarioController extends Controller
                 $usuario->nome = $request->nome;
                 $usuario->email = $request->email;
                 $usuario->senha = Hash::make($request->senha);
+                $usuario->tipo = $request->tipo;
 
                 $usuario->save();
 
@@ -107,8 +111,8 @@ class UsuarioController extends Controller
 
     public function login(Request $request){
             $request->validate([
-                'email' => 'required|',
-                'senha' => 'required|',
+                'email' => 'required|email',
+                'senha' => 'required|min:6',
             ]);
 
 

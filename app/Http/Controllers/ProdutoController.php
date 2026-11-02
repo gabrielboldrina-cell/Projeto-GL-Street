@@ -17,9 +17,6 @@ class ProdutoController extends Controller
     return view('cadastro_produto');
   }
 
-
-
-
   
   public function vizualizar_produto($id)
   {
@@ -28,92 +25,104 @@ class ProdutoController extends Controller
     return view('vizualizar_produto')->with('produto', $produto);
   }
 
-  public function alterar_produto(Request $request)
+  public function salvar_produto(Request $request)
   {
     $request->validate([
-      'nome_produto' => 'required',
-      'descricao_produto' => 'nullable',
-      'preco_produto' => 'required|numeric',
-      'quantidade_produto' => 'required',
-      'tipo_produto' => 'required',
-      'produto_id' => 'required',
+      'nome' => 'required',
+      'descricao' => 'nullable',
+      'preco' => 'required|numeric',
+      'estoque' => 'required',
+      'tipo' => 'required',
     ]);
 
-
     try {
-      $produto = Produto::where('id', $request->produto_id)->first();
-      if ($produto) {
-        $produto->nome = $request->nome_produto;
-        $produto->descricao = $request->descricao_produto;
-        $produto->preco = $request->preco_produto;
-        $produto->estoque = $request->quantidade_produto;
-        $produto->tipo = $request->tipo_produto;
-        $produto->save();
+      $produto = new Produto();
+      $produto->nome = $request->nome;
+      $produto->descricao = $request->descricao;
+      $produto->preco = $request->preco;
+      $produto->estoque = $request->estoque;
+      $produto->tipo = $request->tipo;
+      $produto->save();
 
-
-        $data = [];
-
-        $data = [
-          'erro' => 'n',
-          'msg' => 'Produto alterado com sucesso!'
-        ];
-      }else{
-        $data = [];
-
-        $data = [
-          'erro' => 's',
-          'msg' => 'Produto não encontrado!'
-        ];
-      }
-      return response()->json($data, 200);
-    } catch (\throwable $th) {
-      throw $th;
-      $data = [];
-
-      $data = [
-        'erro' => 's',
-        'msg' => 'Erro ao alterar produto: ' . $th->getMessage()
-      ];
-
-      return response()->json($data, 200);
+      return response()->json(['message' => 'Produto cadastrado com sucesso!', 'erro' => 'n'], 200);
+    } catch (\Throwable $th) {
+      return response()->json(['message' => 'Erro ao cadastrar produto!', 'erro' => 's', 'msg_erro' => $th->getMessage()], 200);
     }
   }
 
-  public function deletar_produto(Request $resquest)
+  public function alterar_produto(Request $request)
   {
-    $resquest->validate([
+    $request->validate([
       'produto_id' => 'required|integer',
+      'nome' => 'required|string|max:255',
+      'descricao' => 'nullable|string',
+      'preco' => 'required|numeric',
+      'estoque' => 'required|integer',
+      'tipo' => 'required|string|max:255',
     ]);
 
     try {
-    $produto = Produto::where('id', $resquest->produto_id)->first();
+      $produto = Produto::find($request->produto_id);
+
+      if ($produto) {
+        $produto->nome = $request->nome;
+        $produto->descricao = $request->descricao;
+        $produto->preco = $request->preco;
+        $produto->estoque = $request->estoque;
+        $produto->tipo = $request->tipo;
+        $produto->save();
+
+        return response()->json(['message' => 'Produto alterado com sucesso!', 'erro' => 'n'], 200);
+      } else {
+        return response()->json(['message' => 'Produto não encontrado!', 'erro' => 's'], 200);
+      }
+    } catch (\Throwable $th) {
+      return response()->json(['message' => 'Erro ao alterar produto!', 'erro' => 's', 'msg_erro' => $th->getMessage()], 200);
+    }
+  }
+ 
+
+  public function deletar_produto(Request $request)
+  {
+    $request->validate([
+      'produto_id' => 'required|integer',
+    ]); 
+
+    try { 
+      $produto = Produto::find($request->produto_id);
+      $produto->delete();
+      return response()->json(['message' => 'Produto deletado com sucesso!', 'erro' => 'n'], 200);
+    } catch (\Throwable $th) {
+      return response()->json(['message' => 'Erro ao deletar produto!', 'erro' => 's', 'msg_erro' => $th->getMessage()], 200);
+    }
+  }
+
+  public function listar_produtos(Request $request)
+  {
+    $produtos = Produto::all();
+    return response()->json(['produtos' => $produtos], 200);
+  }
+
+  public function listar_produtos_simples(Request $request)
+  {
+    $produtos = Produto::select('nome', 'preco')->get();
+    return response()->json(['produtos' => $produtos], 200);
+  }
+
+  public function ver_produto(Request $request)
+  {
+    $request->validate([
+      'produto_id' => 'required|integer',
+    ]);
+
+    $produto = Produto::find($request->produto_id);
 
     if ($produto) {
-      $produto->delete();
-
-      $data = [];
-      $data = [
-        'erro' => 'n',
-        'msg' => 'Produto deletado com sucesso!'
-      ];
+      return response()->json(['produto' => $produto, 'erro' => 'n'], 200);
     } else {
-      $data = [];
-      $data = [
-        'erro' => 's',
-        'msg' => 'Produto não encontrado!'
-      ];
+      return response()->json(['message' => 'Produto não encontrado!', 'erro' => 's'], 200);
     }
-    return response()->json($data, 200);
-    }catch(\throwable $th){
-      throw $th;
-      $data = [];
-      $data = [
-        'erro' => 's',
-        'msg' => 'Erro ao deletar produto: ' . $th->getMessage()
-      ];
-
-    }
-    }
+  }
 
     
 

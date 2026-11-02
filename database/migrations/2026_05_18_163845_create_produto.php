@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('descricao')->nullable();
             $table->decimal('preco', 10, 2)->default(0.00);
             $table->integer('estoque')->default(0);
-            $table->date('data_validade')->nullable();
+            $table->date('marca');
             $table->string('tipo')->nullable();
             $table->timestamps();
         });

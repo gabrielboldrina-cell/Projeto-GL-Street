@@ -1,20 +1,19 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Controller;
 use App\Http\Controllers\CadastarProdutoController;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\UsuarioController;
 use App\http\Middleware\LoginApiMiddleware;
 
-Route::get('/user', function (Request $request) {
-    return $request->user();})->middleware('auth:sanctum');
 
-    
+//Crud Produto
 Route::post('/salvar_produto', [CadastarProdutoController::class, 'store']);
 Route::put('/alterar_produto', [ProdutoController::class, 'alterar_produto'])->name('alterar_produto');
 Route::delete('/deletar_produto', [ProdutoController::class, 'deletar_produto'])->name('deletar_produto');
+Route::get('/listar_produtos', [ProdutoController::class, 'listar_produtos'])->name('listar_produtos');
+Route::get('/listar_produtos_simples', [ProdutoController::class, 'listar_produtos_simples'])->name('listar_produtos_simples');
+Route::get('/ver_produto', [ProdutoController::class, 'ver_produto'])->name('ver_produto');
 
 //Crud Usuario
 Route::post('/salvar_usuario', [UsuarioController::class, 'salvar_usuario']);
@@ -26,3 +25,4 @@ Route::delete('/deletar_usuario', [UsuarioController::class, 'deletar_usuario'])
 
 //Login SECURITY
 Route::post('/login', [UsuarioController::class, 'login']); 
+ 
