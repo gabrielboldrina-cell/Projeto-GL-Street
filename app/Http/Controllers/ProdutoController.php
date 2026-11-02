@@ -14,7 +14,7 @@ class ProdutoController extends Controller
 
   public function cadrastro_produto(Request $request)
   {
-    return view('cadastro_produto');
+    return view('/cadastro_produto');
   }
 
   
