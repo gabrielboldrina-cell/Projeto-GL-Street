@@ -134,5 +134,24 @@ class UsuarioController extends Controller
                 return response()->json(['message' => 'Email não encontrado', 'erro' => 's'],200);
             }
         }
+
+        public function logout(Request $request){
+            $request->validate([
+                'usuario_id' => 'required|integer',
+                'token' => 'required',
+                
+            ]);
+
+            $user_token = User_token::where('usuario_id', $request->usuario_id)
+            ->where('token', $request->token)
+            ->first();
+
+            if($user_token){
+                $user_token->delete();
+                return response()->json(['message' => 'Logout realizado com sucesso', 'erro' => 'n'],200 );
+            }else{
+                return response()->json(['message' => 'Token não encontrado', 'erro' => 's'],200);
+            }
+        }
    
 }
