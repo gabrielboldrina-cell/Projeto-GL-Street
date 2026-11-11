@@ -10,6 +10,7 @@ use App\Http\Controllers\CompraController;
 use App\Http\Controllers\SobreController;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\CadastarProdutoController;
+use App\Http\Controllers\LogintesteController;
 
 Route::get('/', [LoginController::class, 'index'])->name('glstreet');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
@@ -22,3 +23,4 @@ Route::get('/cadastro_produto', [CadastarProdutoController::class, 'salvar_produ
 Route::get('/lista_produto', [CadastarProdutoController::class, 'lista_produto'])->name('lista_produto');
 Route::get('/vizualizar_produto/{id}', [ProdutoController::class, 'vizualizar_produto'])->name('vizualizar_produto');
 Route::get('/deletar_produto', [ProdutoController::class, 'deletar_produto'])->name('deletar_produto');
+Route::get('/login_teste', [LogintesteController::class, 'login_teste'])->name('login_teste');
